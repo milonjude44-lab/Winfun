@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo Toy Wins | Official @Tubofuntoys Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sky-blue: #00AEEF;
+            --rescue-red: #EE3124;
+            --safety-yellow: #FFD200;
+            --deep-ocean: #00529B;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            background: radial-gradient(circle at top, var(--sky-blue) 0%, var(--deep-ocean) 100%);
+            background-attachment: fixed;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Nav Bar */
+        nav {
+            background: var(--white);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Bangers', cursive;
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            color: var(--rescue-red);
+            text-decoration: none;
+            text-shadow: 1px 1px 0px var(--deep-ocean);
+        }
+
+        .nav-link {
+            background: var(--rescue-red);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 0px #b31d14;
+        }
+
+        .nav-link:hover { transform: translateY(-2px); box-shadow: 0 6px 0px #b31d14; }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Featured Review Card */
+        .main-card {
+            background: var(--white);
+            border-radius: 35px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            margin: 30px 0;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+            border: 5px solid var(--white);
+        }
+
+        @media (min-width: 992px) {
+            .main-card { flex-direction: row; text-align: left; min-height: 450px; }
+            .card-img { width: 50%; }
+            .card-body { width: 50%; padding: 60px; display: flex; flex-direction: column; justify-content: center; }
+        }
+
+        .card-img { background: #f8f9fa; padding: 20px; display: flex; align-items: center; justify-content: center; }
+        .card-img img { max-width: 100%; height: auto; border-radius: 20px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1)); }
+
+        /* "Join the Fun" Button Style */
+        .btn-join {
+            display: inline-block;
+            background: var(--rescue-red);
+            color: white;
+            font-family: 'Bangers', cursive;
+            font-size: clamp(1.5rem, 5vw, 2.2rem);
+            padding: 18px 45px;
+            border-radius: 60px;
+            text-decoration: none;
+            margin-top: 25px;
+            box-shadow: 0 8px 0px #b31d14;
+            transition: all 0.2s;
+            letter-spacing: 1px;
+        }
+
+        .btn-join:hover { transform: translateY(3px); box-shadow: 0 4px 0px #b31d14; }
+
+        /* Typography */
+        .section-title {
+            font-family: 'Bangers', cursive;
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            color: var(--white);
+            margin: 60px 0 20px;
+            text-shadow: 4px 4px 0px var(--rescue-red);
+        }
+
+        /* Grid Layout for Info & Winners */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .info-box {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 25px;
+            border-bottom: 8px solid var(--safety-yellow);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .winner-tag {
+            background: var(--deep-ocean);
+            color: white;
+            padding: 12px;
+            border-radius: 12px;
+            display: block;
+            margin-top: 15px;
+            font-weight: 900;
+            font-size: 1.1rem;
+        }
+
+        /* Footer CTA */
+        .cta-footer {
+            background: var(--safety-yellow);
+            padding: 70px 30px;
+            border-radius: 50px;
+            margin: 80px 0;
+            color: var(--deep-ocean);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: #001a33;
+            color: rgba(255,255,255,0.7);
+            padding: 60px 20px;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">@Tubofuntoys</a>
+        <a href="https://www.youtube.com/@Tubofuntoys?sub_confirmation=1" class="nav-link">JOIN THE FUN</a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="main-card">
+            <div class="card-img">
+                <img src="image.png" alt="Latest Paw Patrol Set">
+            </div>
+            <div class="card-body">
+                <span style="background:var(--rescue-red); color:white; padding:5px 15px; border-radius:20px; font-weight:900; font-size:0.8rem;">NEWEST REVIEW</span>
+                <h2 style="font-family:'Bangers'; font-size: clamp(2rem, 5vw, 3rem); color: var(--deep-ocean); margin:15px 0;">PAW PATROL MEGA RESCUE</h2>
+                <p>Check out our latest unboxing of the biggest Paw Patrol set yet! We test every feature and show you all the hidden surprises.</p>
+                <a href="https://www.youtube.com/@Tubofuntoys?sub_confirmation=1" class="btn-join">JOIN THE FUN</a>
+            </div>
+        </div>
+
+        <div class="section-title">HOW TO WIN</div>
+        <div class="grid">
+            <div class="info-box">
+                <h3 style="font-family:'Bangers'; color:var(--rescue-red); font-size:2rem;">1. SUBSCRIBE</h3>
+                <p>Click "Join the Fun" and subscribe to <strong>@Tubofuntoys</strong>.</p>
+            </div>
+            <div class="info-box">
+                <h3 style="font-family:'Bangers'; color:var(--rescue-red); font-size:2rem;">2. COMMENT</h3>
+                <p>Leave a fun comment on our latest Paw Patrol video!</p>
+            </div>
+            <div class="info-box">
+                <h3 style="font-family:'Bangers'; color:var(--rescue-red); font-size:2rem;">3. WIN</h3>
+                <p>We pick random subscribers and reply to your comment on YouTube!</p>
+            </div>
+        </div>
+
+        <div class="section-title">WINNER'S CIRCLE 🏆</div>
+        <div class="grid">
+            <div class="info-box">
+                <p>Won: <strong>Paw Patrol Lookout Tower</strong></p>
+                <span class="winner-tag">@ChaseFan_2026</span>
+            </div>
+            <div class="info-box">
+                <p>Won: <strong>Marshall's Fire Engine</strong></p>
+                <span class="winner-tag">@SkyHighToys</span>
+            </div>
+        </div>
+
+        <div class="cta-footer">
+            <h2 style="font-family:'Bangers'; font-size: clamp(2.5rem, 6vw, 4rem); margin:0;">DON'T MISS OUT!</h2>
+            <p style="font-weight:700; font-size:1.2rem;">Our next Paw Patrol giveaway starts soon!</p>
+            <a href="https://www.youtube.com/@Tubofuntoys?sub_confirmation=1" class="btn-join" style="background: var(--deep-ocean); box-shadow: 0 8px 0px #003366;">JOIN THE FUN</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <p><strong>OFFICIAL @TUBOFUNTOYS HUB</strong></p>
+            <p>PAW PATROL IS A TRADEMARK OF SPIN MASTER LTD. THIS PROMOTION IS NOT SPONSORED BY SPIN MASTER OR YOUTUBE.</p>
+            <p>NO PURCHASE NECESSARY. WINNERS ARE SELECTED AT RANDOM FROM PUBLIC SUBSCRIBERS WHO COMMENT ON VIDEOS. PARENTS MUST BE 18+ TO CLAIM PRIZES ON BEHALF OF CHILDREN.</p>
+            <p>© 2026 Turbo Toy Reviews. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
